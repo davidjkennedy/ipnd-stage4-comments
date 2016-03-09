@@ -1,0 +1,22 @@
+	<div>
+	    <h4>Leave a Comment</h4>
+
+	    <form action="/comments" method="post">
+	        <p>Name: <br><input type="text" name="user_name"  width="300px"></p>
+	        <p>Message: <br><textarea name="message" width="300px"rows="5"></textarea></p>
+	        <p><input type="Submit" value="Post"</p>
+	    </form>
+
+        <h4>Past Comments:</h4>
+
+        {% for comment in comments %}
+        {{ comment.name }} on {{ comment.timestamp.strftime("%b %d %Y at %I:%M %p") }} said:<br>{{ comment.message }}
+        <br>
+        {% endfor %}
+    </div>
+
+<div class="container">
+
+
+
+ </div> <!-- /container -->

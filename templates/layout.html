@@ -1,0 +1,83 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<html>
+<head>
+	<meta charset="UTF-6">
+	<title>{{ title }}</title>
+    <link rel="stylesheet" href="/static/css/ipnd_styles.css">
+	<link rel="stylesheet" href="/static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/css/font-awesome.min.css">
+
+{% include "navbar.html" %}
+
+</head>
+
+<body>
+    <div class="container">
+      <div class="blog-header">
+        <h1 class="blog-title">IPND Notes {{ title }}</h1>
+        <p class="lead blog-description">Welcome to my Notes for Udacity IPND</p>
+      </div>
+      <div class="row">
+        <div class="col-sm-6 notes-home"><!-- main-content -->
+
+
+
+          {% block content %}
+
+          {% endblock %}
+
+
+
+        </div>         <!-- /.main-content -->     
+            <aside>
+                  <div class="col-sm-3 col-sm-offset-1 blog-sidebar">
+                    <div class="sidebar-module sidebar-module-inset">
+        <div>
+            <p><h4>Leave a Comment</h4></p>
+            <hr>
+
+                <form action="/comments" method="post">
+                    
+                    <fieldset class="form-group">
+                        <input type="text" name="user_name" class="form-control" placeholder="Name: ">
+                    </fieldset>
+
+                    <fieldset class="form-group">
+                        <textarea class="form-control" type="text" name="message" placeholder="Message" id="exampleTextarea"></textarea>
+                    </fieldset>              
+                    <div style="color: red">%(error)s</div>
+                    <fieldset class="form-group">
+                        <input type="Submit" value="Post" class="btn btn-primary">
+                    </fieldset>
+                </form>
+                <hr>
+            <h4>Past Comments:</h4>
+                <hr>
+
+                {% for comment in comments %}
+
+                <div class="well well-sm">
+                    <b>{{ comment.name }}</b> said:<br> 
+                    {{ comment.message }}
+                    <h6><i>{{ comment.timestamp.strftime("%b %d %Y at %I:%M %p") }}</i></h6>
+                </div>
+                    {% endfor %}
+    </div>
+
+                  </div><!-- /.blog-sidebar -->
+                </aside>
+
+      <!-- </div>/.row -->
+
+    <!-- </div>/.container -->
+
+{% include "footer.html" %}
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+		<script src="/static/js/bootstrap.min.js"></script>
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+</html>

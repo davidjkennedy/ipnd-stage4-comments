@@ -1,0 +1,16 @@
+{% extends "layout_stages.html" %}
+{% block content %}
+<section>
+	<article>
+		<div>
+			{% for item in stage1 %}
+			<p class="title"><h4>{{ item.title }}</h4></p>
+			<p class="description">{{ item.desc }}</p>
+			<hr>
+			{% endfor %}
+
+		</div>
+	</article>
+</section>
+
+{% endblock %}

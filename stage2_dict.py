@@ -1,0 +1,24 @@
+stage2 = [
+{"title": "Stage 2: Serious Programming with Python (learning how to make programs)"}, 
+{"desc": """This section was all about setting yourself up for a dive into the serious study of programming, specifically with python. Starting with Python Installation, learning about differnt data types, how to make variables, write expressions, and read and create simple functions and loops, and finishing off with so debugging techniques."""}, 
+{"title": "Lesson 1: Introduction to Serious Programming."}, 
+{"desc": """A Computer is a universal machine that can be programmed to emulate anything. A Computer Program is a sequence of explicit instructions which the computer can understand. Procedural Thinking is needed to generate logical instructions in a computer program."""},
+{"desc": """Programming and Python: Programming is at the heart of Computer Science. Natural Language is Ambiguous and Verbose. Computer programs need to be written as a logical succinct sequence of commands. The grammar in program languages is strict and errors can cause problems (syntax errors stopping the program from running) or worse not giving an error message but causing incorrect or unpredictable results."""},
+{"desc": """Programming Grammar: Programming languages have a very simple and concise grammar. The syntax is derived through the process of derivation to a point where all non-terminals are replaced until only terminals are left. Terminals being the elementary symbols of the language defined by its formal grammar."""},
+{"title": "Lesson 2: Variables and Strings"},
+{"desc": "In programming we store Data in Variables"}, 
+{"desc": """Variables: A Variable is a container that holds a declared value while the program is running. How we give Variables value is through an Assignment Statement. Do not Capitalize variables! Variables cannot start with a number, should not be too long, cannot contain special characters, use camelCase or underscores, dividing by Zero will always give you an Error! 1 devided by zero is always undefined! If every value is an Integer you get an Integer. If even one is a float you get a float. Variables must be defined before using them in expressions. As variables can change the same program can be use to process different sets of data."""},  
+{"desc": """Strings: Most data is in the form of strings rather then numbers. Strings can be created with single or double quotes. The convention is to use lowercase numbers, letters and underscores only. You cannot add numbers and strings together, but you can concatenate, and multiply them together."""},
+{"title": "Lesson 3: Input - Function - Output"},
+{"desc": "A Function is a small block of defined reusable code that can take an input, changes it in some way and create desirable output."},
+{"desc": """Function Calls: Functions once defined can be saved and reused, allowing the same operation to be executed over and over again, on whatever data is passed into it as arguments, great for repetitive tasks. Functions are a building block of programming problem solving strategy, a large problem can be broken up into smaller problems solved by functions. This is termed Function Composition, the process of combining simple functions to make more complex ones. The result of each function is passed as an argument in the next Function."""},
+{"title": "Lesson 4: Decision Making and Repetition"},
+{"desc": """The output of a comparison is not a number its a Boolean Value and with it we can make our programs do something different based on the results of a comparison."""},
+{"desc": """Comparison Operators: != Not Equal to; < ; Less than; > ; Greater than; <= Less than and Equal >= Greater than and Equal to"""},
+{"desc": """Boolean Values: == is used as the equals symbol is already used in variable assignments. True and False can be stored in variables - True or False."""},
+{"desc": "If statement: An if statement can be used to conditionally execute code, depending on whether or not the if statements condition is True or False."},
+{"desc": """elif statement: An elif (that is else if) statement can follow an if statement. Its block executes if its condition is True and all of the previous conditions have been False."""},
+{"desc": """else statement: An else statement comes at the end. Its block is executed if all of the previous conditions have been False."""},
+{"desc": """Solving Problems in Programming: Examine the error message when Python crashes, it will help you identify what went wrong. Read your code backward If your modified code doesn't work, comment it out and go through it step by step to isolate the problem. Make sure the example code works and behaves as expected. Use print statement to check intermediate results. Always save the latest working version before adding or modifying it so you can always revert to it"""}
+]
+

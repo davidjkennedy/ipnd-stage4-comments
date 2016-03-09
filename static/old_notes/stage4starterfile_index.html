@@ -1,0 +1,1180 @@
+<!DOCTYPE html>
+<!-- saved from url=(0131)file:///Users/davidiMac/Documents/UDACITY/Intro_to_Computer_Science_NANODEGREE/STAGES/stage_02/stage2workSession4_index.html#h5o-46 -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, maximum-scale=1.0, minimum-scale=1.0, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+    <body> 
+        <header class="masthead clear">
+        <div class="centered">
+            <div class="site-branding">
+                <h1 class="site-title" id="pageHeader">Intro to Programming</h1>
+            </div><!-- .site-title -->
+        </div><!-- .centered -->
+    </header><!-- .masthead --> 
+
+
+        <div class="centered">
+            <section class="menu-section">
+                <header id="Navigation Header">
+                 <h2>Nano Degree Notes</h2>
+                </header><!-- NAV HEADER -->
+                <nav id="single-nav" class="single-nav menu" role="navigation">
+                    <ul>
+                        <li><a href="#stage1Header">STAGE1</a></li>
+                        <li><a href="#stage2Header">STAGE2</a></li>
+                        <li><a href="#stage3Header">STAGE3</a></li>
+                        <li><a href="#stage4Header">STAGE4</a></li>
+                        <li><a href="#">STAGE5</a></li>  
+                    </ul>
+                </nav><!-- .single-nav #single-nav -->
+            </section><!-- .menu-section -->
+        </div><!-- .centered -->
+
+        <section><!-- ############### MAIN SECTION OPEN ############### MAIN SECTION OPEN ############### -->
+
+            <!--  ############# STAGE 1 #############  STAGE 1  ################  STAGE 1   ###############-->
+            <header id="stage1Header">
+                 <h2>Stage 1: Web Documents and Structure</h2>
+            </header><!-- STAGE 1 HEADER -->
+            
+                <!-- STAGE 1 LESSON #1 THE BASICS OF THE WEB, HTML AND CSS ********************* -->
+
+                <article class="stage1lesson1">
+                    <!-- article stage1lesson1 -->
+                    <header>    
+                        <h3>Lesson 1: The Web, HTML &amp; CSS</h3>    
+                    </header>
+
+                        <header>
+                            <h4>How the Web Works</h4>
+                        </header>
+                            <p>
+                                The<a href="http://www.w3.org/" target="_blank"> World Wide Web</a> was created in the early nineties and has become a system supporting the sharing, storage, linking and displaying of specially formatted text documents using the markup language of <a href="http://en.wikipedia.org/wiki/HTML" target="_blank"> HTML</a>.
+                            </p>
+                            <p>
+                               <span class="italic">Hyper Text Markup Language</span> or <a href="http://en.wikipedia.org/wiki/HTML" target="_blank"> HTML</a> is made up of text, markup tags, and reference links to other pages and media (images, video, audio). Markup extends text into html making it richer. Internet based <a href="http://en.wikipedia.org/wiki/HTML" target="_blank"> HTML</a> documents stored on servers can be displayed on a computer that has an internet connection by pointing a <span class="italic">Web Browser</span> to a unique internet address otherwise known as a <a href="http://en.wikipedia.org/wiki/Uniform_resource_locator" target="_blank">URL</a>. The rules for the tranfer and storage of these files from server to browser is called <a href="http://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol" target="_blank"> HTTP</a>.
+                            </p>
+                            <p>
+                                The syntax of code is strict, and there are many rules, too many to memorize, if you forget something you can always look it up quickly at the <a href="http://www.w3.org/" target="_blank">W3</a> website but if you obey the rules you can create amazing things!.
+                            </p>
+                        <header>
+                            <h4>Tags and Elements</h4>
+                        </header>
+                            <figure><!-- IMAGE   ******************************************************************** -->
+                                <img src="http://i.imgur.com/2831aN8.jpg" class="thumbnail" height="200" width="400" alt="Anatomy of a html element">  
+                                    <figcaption>Anatomy of a html Element</figcaption>
+                            </figure><!-- IMAGE   ******************************************************************** -->
+                            <p>
+                                A <span class="bold">HTML Element</span> is made up of the content within a set of opening and closing <span class="bold">tags</span>. An Elements attributes are always specified at the start of a tag and provides additional info about the element.
+                            </p>
+                            <dl>
+                                <dt><b>Opening Tag:</b></dt>
+                                    <dd>All tags are contained within brackets i.e. the paragraph opening tag.</dd>
+                                <dt><b>Content:</b></dt>
+                                    <dd>whatever the content happens to be.</dd>
+                                <dt><b>Closing Tag:</b></dt>
+                                    <dd>the paragraph closing tag.</dd>
+                            </dl>
+                            <p>
+                                <b>Note:</b> some tags <a href="http://blog.teamtreehouse.com/to-close-or-not-to-close-tags-in-html5" target="_blank">(void tags)</a> do not require a closing tags. e.g. the line break tag <b>&lt;br&gt;</b>.
+                            </p>
+                        <header>
+                            <h4>White Space, Block, and Inline Elements In HTML</h4>
+                        </header>
+                            <p>
+                                Whitespace is always just one space, so to create space around elements/text use tags. e.g. the line break tag.<b>&lt;br&gt;</b><br>
+
+                                      <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Inline_elemente" target="_blank">Inline Elements</a> are normally displayed without line breaks.<br> 
+                                      Examples of Inline tags: <b>&lt;span&gt;</b>.<br> 
+                                      The <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/span" target="_blank">span</a> tag is used to group inline elements together for CSS styling, creates no change on its own. More detail on span later ... it should be closed like this:<b>&lt;/span&gt;.</b><br>
+                                      <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Block-level_elements" target="_blank">Block Level Elements</a> are normally start with a new line.<br> 
+                                      Examples of Block tags: <b>&lt;div&gt;</b>.<br> 
+                                      The <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/div" target="_blank">div</a> tag is used to group block elements together for CSS styling, by default browsers always places a line break before and after the div element. More detail later ... it should be closed like this: <b>&lt;/div&gt;.</b>
+                            </p>
+                         <header>
+                             <h4>More Tags</h4>
+                         </header>
+                            <p>
+                              The <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/br" target="_blank">br</a> tag <b>&lt;br&gt;</b> is used to insert a single line break in content, it is a void tag so it doesn't need to be closed except for in xhtml where it should be closed like this:<b>&lt;/br&gt;.</b><br>
+                              The<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/p" target="_blank"></a> tag <b>&lt;p&gt;</b> by default browsers will automatically add a margin before and after the paragraph element.
+                            </p>
+                </article><!-- article stage1lesson1 -->
+           
+                <!-- STAGE 1 LESSON #2 CREATING STRUCTURE AND ADDING STYLE ************************ -->
+
+                <article class="stage1lesson2">
+                    <header>
+                        <h3>Lesson 2: Creating Structure and adding Style</h3>
+                    </header> 
+                        <header>
+                            <h4>HTML and the DOM</h4>
+                        </header>
+                        <!-- IMAGE   ******************************************************************** -->
+                            <figure>
+                                <img src="http://i.imgur.com/AZsfvl9.jpg" class="thumbnail" height="200" width="400" alt="DOM HTML branch structure">  
+                                    <figcaption>Tree Branch Structure</figcaption>
+                            </figure>
+                        <!-- IMAGE   ******************************************************************** -->
+                            <p>
+                              HTML classifies page content, and controls structure using the Document Object Model - (The tree like structure of a page). The Browser interprets the <a href="http://en.wikipedia.org/wiki/Document_Object_Model" target="_blank">DOM</a> (nested structure of HTML Tags) which gives it display, order, structure and external document (CSS document) styling information.
+                            </p>
+                        <header>
+                            <h4>Adding Style to Structure with CSS</h4>
+                        </header> 
+                            <p>
+                                Avoid repetition is an essential idea in Computer Science. Learning how to use <span class="italic">HTML</span> <a href="http://www.w3schools.com/tags/att_global_class.asp" target="_blank">Classes</a> and <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference" target="_blank">CSS</a> Styles to make your page content look good starts with deconstucting existing pages. Find something you like and try to reverse engineer it. In the same way developers start with a mockup design and start by breaking the visual elements down into boxes that will become the framework.
+                            </p>
+                        <!-- IMAGE   ******************************************************************** -->
+                            <figure>
+                                <img src="http://i.imgur.com/EQcnfBx.jpg" class="thumbnail" height="200" width="400" alt="house structure metaphor for front end dev">  
+                                    <figcaption>House Analogy for Front-End Dev</figcaption>
+                            </figure>
+                        <!-- IMAGE   ******************************************************************** -->
+                            <p>
+                                From this framework it can be built out. Think of the House analogy, <span class="italic">HTML</span> is the structure (The Walls, Floor, Roof), <span class="italic">CSS</span> is the design elements (Finishes, paint color), <span class="italic">Javascript</span> is the interactive components (TV Remote, Garage Door Opener).Just like a house a website can take many skills, tools and technologies to build, Developer Tools, <span class="italic">Browsers</span>, and Technologies e.g <a href="https://developer.mozilla.org/en-US/Learn/JavaScript" target="_blank">Javascript</a>, <a href="https://jquery.com/" target="_blank">JQuery</a>, ect.
+                            </p>
+                </article><!-- article stage1lesson2 -->
+
+                <!-- STAGE 1 LESSON #3 Headings THE BOX MODEL AND NORMALIZE  ********************** -->
+            
+                <article class="stage1lesson3">
+                    <header>
+                        <h3>Lesson 3: Headings The Box Model and Normalize</h3>
+                    </header> 
+                    
+                    <header>
+                        <h4>Headers (h1-h6)</h4>
+                    </header>
+                        <!-- IMAGE   ******************************************************************** -->
+                            <figure>
+                                <img src="http://i.imgur.com/JsTArZY.jpg" class="thumbnail" height="200" width="400" alt="house structure metaphor for front end dev">  
+                                    <figcaption>diagram of heading h1-h6</figcaption>
+                            </figure>
+                        <!-- IMAGE   ******************************************************************** -->
+                            <p>
+                                HTML Heading (h1-h6) are used to structure page <a href="https://gsnedders.html5.org/outliner/" target="_blank">(outline)</a> content and determine heirarchy. Search Engines scan (h1) headers for the most important content of a page. Headers are the default way that browsers display page heirarchy.
+                            </p>
+                                <ul>
+                                    <li><b>Content: </b>Content box is at the center</li>
+                                    <li><b>Padding: </b>Clears an area around the center, it effected by the background color of the content box.</li>
+                                    <li><b>Border: </b>Goes around the padding and content and its color is inherited from the background color of the content box.
+                                    </li><li><b>Margin: </b>Clears an area around the border, it doesn't have a background color and is transparent.</li>
+                                </ul>
+
+                    <header>
+                        <h4>The Box Model and Flex Box</h4>
+                    </header>
+                        <!-- IMAGE   ******************************************************************** -->
+                            <figure>
+                                <img src="http://i.imgur.com/Tx48m9Z.jpg" class="thumbnail" height="200" width="400" alt="indexing substrings in a string">  
+                                    <figcaption>The Box Model</figcaption>
+                            </figure>
+                        <!-- IMAGE   ******************************************************************** -->
+
+                            <p>
+                            Start to get first hand experience using the developer tools in <span class="italic">Chrome</span>.<br>
+                            HTML elements are boxes and each element has four parts,these parts are layed out below but dealing with them can be simplified by: </p>
+                                <ol>
+                                    <li>Set sizes in Percentages instead of Pixels</li>
+                                    <li>Set the box-sizing attribute to border-box for every element.</li>
+                                </ol>
+                            
+                                <ul>
+                                    <li><b>Content: </b>Content box is at the center</li>
+                                    <li><b>Padding: </b>Clears an area around the center, it effected by the background color of the content box.</li>
+                                    <li><b>Border: </b>Goes around the padding and content and its color is inherited from the background color of the content box.
+                                    </li><li><b>Margin: </b>Clears an area around the border, it doesn't have a background color and is transparent.</li>
+                                </ul>
+                    <header>
+                        <h4>Flexbox and Normalize</h4>
+                    </header>
+                        <p>
+                        divs are <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Block-level_elements" target="_blank">Block Elements </a> and normally take up the whole with of the page this behavior can be overwritten with <span class="bold">display: flex;</span> which will allowing them to appear next to each other on the page. 
+                        Flexbox Layouts are a more efficent way to, layout, align, and distribute space among items in a container.
+                        <br>
+                          <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" target="_blank">see more</a>
+                        </p>
+                        <p>
+                          Browsers use different technology and therefore can display Its standard to do a <span class="bold">CSS</span> reset to zero all styling out. <a href="https://github.com/necolas/normalize.css/" target="_blank">normalize</a>.<br>
+                          Adding the rule <span class="bold">display: flex;</span> to the appropriate CSS will override this behavior and let  <span class="bold">divs</span> appear next to each other.
+                        </p>
+                </article><!-- article stage1lesson3 -->
+
+            <!--  ############# STAGE 2 #############  STAGE 2  ################  STAGE 2   ###############-->
+            <header id="stage2Header">
+                <h2>Stage 2: Intro to Automating your page</h2>
+            </header><!-- STAGE 2 HEADER -->
+                
+                <!-- STAGE 2 LESSON #1 Intro to Serious Programming  *************************** -->            
+                <article class="stage2lesson1">
+                    <header>
+                        <h3>Lesson 1: Intro to Serious Programming</h3>
+                    </header> 
+                        <header>
+                            <h4>The Computer</h4>
+                        </header>
+                            <p>A Computer is a universal machine that can be programmed to emulate anything. A Computer Program is a sequence of explicit instructions which the computer can understand. Procedural Thinking is needed to generate logical instructions in a computer program. Technological Empathy is understanding the technology ecosystem and how it all works.
+                            </p>
+                        <header>
+                            <h4>Programming and Python</h4>
+                        </header>
+                            <p>Programming is at the heart of Computer Science. Natural Language is Ambiguous and Verbose. Computer programs need to be written as a logical succinct sequence of commands. In <a href="https://www.python.org/" rel="nofollow" target="_blank">Python</a> for instance you type code in a Python interpreter (text editor e.g. Sublime). The grammar in program languages is strict and errors can cause problems (syntax errors stopping the program from running) or worse not giving an error message but causing incorrect or unpredictable results. When the code is run the <a href="http://en.wikipedia.org/wiki/Interpreter_(computing)" rel="nofollow" target="_blank">interpreter</a> compiles it into <a href="https://youtu.be/hacBFrgtQjQ" rel="nofollow" target="_blank">Binary</a> machine readable code that the computer understand directly.
+                            </p>
+                        <header>
+                            <h4>Computer Programming Grammar</h4>
+                        </header>
+                            <p><a href="http://en.wikipedia.org/wiki/John_Backus" rel="nofollow" target="_blank">John Backus</a> developed <a href="http://en.wikipedia.org/wiki/Backus%E2%80%93Naur_Form" rel="nofollow" target="_blank">Backus–Naur Form</a> when leading the team that developed <a href="http://en.wikipedia.org/wiki/Fortran" rel="nofollow" target="_blank">FORTRAN</a> (the first widely used high level programming language). Its the basis for programming languages, with a very simple and concise grammar. The syntax is derived through the process of derivation to a point where all non-terminals are replaced until only terminals are left. Terminals being the elementary symbols of the language defined by its formal grammar.
+                            </p>
+                </article><!-- article stage2lesson1 -->
+
+                <!-- STAGE 2 LESSON #2 Variables and Strings  *************************** -->    
+                <article class="stage2lesson2">
+                    <header>
+                            <h3>Lesson 2: Variables and Strings</h3>
+                    </header> 
+
+                        <header>
+                            <h4>Variables</h4>
+                        </header>
+                            <p>In programming we store Data in <span class="italic">Variables</span>. A <span class="italic">Variable</span> is a container that holds a declared value while the program is running. How we give <span class="italic">Variables</span> value is through an <a href="https://en.wikibooks.org/wiki/Ada_Programming/Variables#Assignment_statements" rel="nofollow" target="_blank">Assignment Statement.</a>
+                            </p>
+                        <header>
+                            <h4>Assignment Statement</h4>
+                        </header>
+                            <pre><code><span class="codeMarkup">Name &lt;= Expression</span></code></pre><br>
+                            <p><span class="bold">The evaluation should be read from right to left.</span>
+                            </p>
+                            <p>Here the expressions is assigned a name <span class="bold">“name"</span>.<br>
+                            <span class="bold">“name"</span> here is the <span class="italic">Variable</span> name.<br>
+                            <span class="bold">“="</span> means assignment.<br>
+                            <span class="bold">“Expression"</span> is the value of the <span class="italic">Variable</span>.
+                            <br>
+                            <br>
+                            e.g. speed_of_light = 299792458 # meters per second
+                            </p>
+                            <p>Here the value 5 is assigned to X<br> 
+                            <span class="codeMarkup">&gt;&gt;&gt; x = 5<br>
+                            &gt;&gt;&gt; print x<br>
+                            5<br>
+                            </p>
+                            <p>Here the value 7 is assigned to X  (Variables can Vary)
+                            </p>
+                            <p class="codeMarkup">&gt;&gt;&gt; x = 7<br>
+                            &gt;&gt;&gt; print x<br>
+                            7<br>
+                            </p>
+                        <header>
+                            <h4>Naming Variables</h4>
+                        </header>
+                            <p>Cannot start with a Number.<br>
+                                Should not be too long.<br>
+                                Can’t contain special characters (so use camelCase or underscores).<br>
+                                Dividing by Zero will always give you an Error!<br><span class="italic">1/0 is always undefined!</span>
+                            </p>
+                        <header>
+                            <h4>Variables and Numbers</h4>
+                        </header>
+                            <p><a href="http://www.mathsisfun.com/whole-numbers.html" rel="nofollow" target="_blank">Integer</a> = Whole Numbers<br>
+                            <a href="http://www.tutorialspoint.com/python/python_numbers.htm" rel="nofollow" target="_blank">Float</a> = Decimel Numbers<br>
+                            <a href="https://docs.python.org/2/c-api/long.html" rel="nofollow" target="_blank">Long</a> = Really big Numbers<br>
+                            </p>
+                            <p><span class="bold">Combinations of Type</span></p>
+                            <p>If every value is an Integer you get an Integer. If even one is a float you get a float.</p>
+                            <p><span class="bold">Order of Operations</span><br>
+                            </p>
+                                <ul>
+                                    <li>Parentheses (Inner to outer)</li>
+                                    <li>Exponents and Roots</li>
+                                    <li>Multiplication and Division</li>
+                                    <li>Addition and Subtraction</li>
+                                </ul>
+                            <p>Variables must be defined before using them in expressions.<br>
+                            <span class="codeMarkup">&gt;&gt;&gt; x = 5+6<br>
+                            &gt;&gt;&gt; print x<br>
+                            11<br>
+                            &gt;&gt;&gt; x = x+1<br>
+                            &gt;&gt;&gt; print x<br>
+                            12<br></span><br>
+                            As variables can change the same program can be use to process different sets of data.
+                            </p>
+                        <header>
+                            <h4>Strings</h4>
+                        </header>
+                            <p>Most data is in the form of strings rather then numbers. Strings can be created with single or double quotes<br>
+                            <span class="codemarkup">( “” or ‘’ ) e.g.“22” ’22’ “22'</span>
+                            </p>
+                            <p><span class="bold">The convention is to use lowercase numbers, letters and underscores only.</span>
+                            </p>
+                            <p>Don’t <span class="bold">Capitalize</span> variables!
+                            </p>
+                            <p class="codeMarkup">&gt;&gt;&gt; print 'Hello'<br>
+                            Hello
+                            </p>
+                            <p><span class="bold">You can concatenate strings together</span>
+                            </p>
+                            <p class="codeMarkup">&gt;&gt;&gt; '22'+'2'<br>
+                            '222'
+                            </p>
+                            <p><span class="bold">You can’t add numbers and strings together.</span><br>
+                            <span class="bold">However you can multiply them.</span>     
+                            </p>
+                            <p class="codeMarkup">&gt;&gt;&gt; '2'*2<br>
+                            '22'<br>
+                            </p>
+                        <header>
+                            <h4>Indexing Strings</h4>
+                        </header>
+
+                        <!-- IMAGE   ******************************************************************** -->
+                            <figure>
+                                <img src="http://i.imgur.com/lij4bIz.jpg" class="thumbnail" height="200" width="400" alt="indexing substrings in a string">  
+                                    <figcaption>String Indexing diagram</figcaption>
+                            </figure>
+                        <!-- IMAGE   ******************************************************************** -->
+
+                            <p class="codeMarkup">&gt;&gt;&gt; print 'udacity' [0]<br>
+                            u<br>
+                            &gt;&gt;&gt; print 'udacity' [6]<br>
+                            y<br>
+                            </p>
+                        <header>
+                            <h4>Indexing Subsequences from a String</h4>
+                        </header>
+
+                        <!-- IMAGE   ******************************************************************** -->
+                            <figure>
+                                <img src="http://i.imgur.com/SxAEYXv.jpg" class="thumbnail" height="200" width="400" alt="indexing substrings in a string">  
+                                    <figcaption>Indexing subsequences in strings diagram</figcaption>
+                            </figure>
+                        <!-- IMAGE   ******************************************************************** -->
+                            <pre><code><span class="codeMarkup">&lt;string&gt;[&lt;expression&gt; : &lt;expression&gt;]</span>
+                            </code></pre><br>
+                            <p>searches for a string that is a subsequence of the character in <span class="green">S</span> starting from <span class="red">START</span>  and ending at  <span class="red">STOP -1</span>
+                            </p>
+                            <p class="codeMarkup">&gt;&gt;&gt; print 'udacity'[0:3]<br>
+                            uda<br>
+                            &gt;&gt;&gt; print 'udacity'[0:]<br>
+                            udacity
+                            </p>
+
+                        <!-- YOUTUBE   ******************************************************************** -->
+                            <div class="video" alt="Selecting Sub Sequences">
+                                <iframe width="448" height="252" src="https://www.youtube.com/embed/YY4TG43IdBg" allowfullscreen=""></iframe>
+                            </div><!-- You Tube Video Div Tag -->
+                        <!-- YOUTUBE   ******************************************************************** -->  
+                        <header>
+                            <h4>Find Method</h4>
+                        </header>
+                            <pre><code><span class="codeMarkup">&lt;string&gt;.find(&lt;string&gt;)</span></code></pre><br>
+                            output is the number that gives the first position in the search string where the target string appears If the target string is not found anywhere returns -1.<br>
+                            &gt;&gt;&gt;"cranberry, raspberry, blueberry".find('berry')<br>
+                            4<br>
+                            <pre><code><span class="codeMarkup">&lt;string&gt;.find(&lt;string&gt;,&lt;number&gt;)</span></code></pre><br>
+                            <p>output is the number that gives the first position in the search string where the target string appears <span class="case">after</span> the number. 
+                            </p>
+                        <!-- YOUTUBE   ******************************************************************** -->
+                            <div class="video" alt="Finding with Numbers">
+                                <iframe width="448" height="252" src="https://www.youtube.com/embed/HqltUuVzB2E" allowfullscreen=""></iframe>
+                            </div><!-- You Tube Video Div Tag -->
+                        <!-- YOUTUBE   ******************************************************************** -->
+
+                            <p class="codeMarkup">&gt;&gt;&gt; "cranberry, raspberry, blueberry".find('berry')<br>
+                            4<br>
+                            &gt;&gt;&gt; "cranberry, raspberry, blueberry".find('berry',5)
+                            15<br>
+                            &gt;&gt;&gt; "cranberry, raspberry, blueberry".find('berry',16)
+                            26<br>
+                            &gt;&gt;&gt; "cranberry, raspberry, blueberry".find('berry',27)
+                            -1<br>
+                            </p>
+                </article><!-- article stage2lesson2 -->
+
+                <!--  STAGE 2 LESSON #3 Input - Function - Output  *************************** -->   
+                <article class="stage2lesson3">
+                    <header>    
+                        <h3>Lesson 3: Input - Function - Output</h3>    
+                    </header>
+                        <header>
+                            <h4>What is a Function</h4>
+                        </header>
+                            <p>A <a href="https://docs.python.org/2/c-api/long.html" rel="nofollow" target="_blank">Function</a> is a small block of defined reusable code that can take an input, changes it in some way and create desirable output.</p>
+                        <header>
+                            <h4>Anatomy of a Function</h4>
+                        </header>
+                        <!-- IMAGE   ******************************************************************** -->
+                            <figure>
+                                <img src="http://i.imgur.com/Isif3AR.jpg" class="thumbnail" height="200" width="400" alt="diagram explaining block and inline elements">  
+                                    <figcaption>Anatomy of a Function</figcaption>
+                            </figure>
+                        <!-- IMAGE   ******************************************************************** -->
+                            <p class="codeMarkup">def name( parameters ):<br>
+                            statements
+                            </p>
+                                <ul>
+                                    <li><span class="bold">def</span> - Define - what does the function do?</li>
+                                    <li><span class="bold">name</span> - name - the function semantically.</li>
+                                    <li><span class="bold">parameters</span> - inputs - formal parameters.</li>
+                                    <li><span class="bold">statement</span> - expression</li>
+                                    <li><span class="bold">return</span> (tells Python exactly what the output should be).</li>
+                                </ul>
+                            <p>The Return Statement exits the function. A return statement with no arguments is the same as a <span class="italic">NONE</span>.
+                            </p>
+                        <header>
+                            <h4>Defining and Calling a Function</h4>
+                        </header>
+                            <p>Simple Function without formal Parameters
+                            </p>
+                            <p class="codeMarkup">&gt;&gt;&gt; def hello():<br>
+                            ...             print("Hello World !")<br>
+                            ...             print("Goodbye World !")<br>
+                            ...<br>
+                            &gt;&gt;&gt; greeting()<br>
+                            Hello World !<br>
+                            Goodbye World !
+                            </p>
+                            <p>Function with formal Parameter "x"
+                            </p>
+                            <p class="codeMarkup">&gt;&gt;&gt; def square(x):<br>
+                            ...             return x*x<br>
+                            ...<br>
+                            &gt;&gt;&gt; n= 34<br>
+                            &gt;&gt;&gt; print square(n)<br>
+                            1156<br>
+                            </p>
+                            <p class="codeMarkup">&gt;&gt;&gt; def say_hello(name):<br>
+                            ...     greeting = "Hello " + name + "!"<br>
+                            ...     return greeting<br>
+                            ...<br>
+                            &gt;&gt;&gt; print say_hello("Miriam")<br>
+                            Hello Miriam!<br>
+                            &gt;&gt;&gt; print say_hello("Andy")<br>
+                            Hello Andy!<br>
+                            </p>
+                        <header>
+                            <h4>Why use a Function</h4>
+                        </header>
+                            <p>
+                                Functions once defined can be saved and reused, allowing the same operation to be executed over and over again, on whatever data is passed into it as arguments, great for repetitive tasks. Functions are a building block of programming problem solving strategy, a large problem can be broken up into smaller problems solved by functions. This is termed <a href="https://en.wikipedia.org/wiki/Function_composition_(computer_science)" rel="nofollow" target="_blank">Function Composition</a>, the process of combining simple functions to make more complex ones. The result of each function is passed as an argument in the next Function.
+                            </p>
+                </article><!-- article stage2lesson3 -->
+
+                <!--  STAGE 2 LESSON #4 Control Flow and Loops  *************************** -->   
+                <article class="stage2lesson4">
+                    <header>    
+                        <h3>Lesson 4: Decision Making and Repetition</h3>    
+                    </header>
+                        <header>
+                            <h4>Control Flow Statements</h4>
+                        </header>
+                            <p class="concept_description">The output of a comparison is not a number its a <a href="https://docs.python.org/2/library/stdtypes.html" rel="no_follow" target="_blank">Boolean Value</a>and with it we can make our programs do something different based on the results of a comparison.<br>
+                            == is used as the “equals” symbol is already used in variable assignment<br>
+                            </p>
+                        <header>
+                            <h4>Boolean Values</h4>
+                        </header>
+                            <p class="concept_description">True and False can be stored in variables - <span class="bold">True</span> or <span class="bold">False</span>
+                            </p>
+                        <header>
+                            <h4>Comparison Operators</h4>
+                        </header>
+                            <p class="concept_description"><span class="bold">!=</span> Not Equal to<br>
+                            <span class="bold">&lt;</span> Less than<br>
+                            <span class="bold">&gt;</span> Greater than<br>
+                            <span class="bold">&lt;=</span> Less than and Equal to<br>
+                            <span class="bold">&gt;=</span>  Greater than and Equal to<br>
+                            </p>
+                        <header>
+                            <h4>Boolean Operators - and True and True == True</h4>
+                        </header>
+                            <p>True and False == False<br>
+                            False and True == False<br>
+                            False and False == False<br>
+                            </p>
+                        <header>
+                            <h4>OR</h4>
+                        </header>
+                            <p>True or True == True<br>
+                            True or False == True<br>
+                            False or True == True<br>
+                            False or False == False<br>
+                            </p>
+                        <header>
+                            <h4>NOT - Only operated on one boolean value</h4>
+                        </header>
+                            <p>not True == False<br>
+                            not False == True<br>
+                            </p>
+                        <header>
+                            <h4> if statement</h4>
+                        </header>
+                            <p class="concept_description">An <span class="italic">if</span> statement can be used to conditionally execute code, depending on whether or not the <span class="italic">if</span> statement’s condition is <span class="bold">True</span> or <span class="bold">False</span>.
+                            </p>
+                        <header>
+                            <h4>elif statement</h4>
+                            <p class="concept_description">An <span class="italic">elif</span> (that is else if) statement can follow an <span class="italic">if</span> statement. Its block executes if its condition is <span class="bold">True</span> and all of the previous conditions have been <span class="bold">False</span>.
+                            </p>
+                        </header>
+                        <header>
+                            <h4>else statement</h4>
+                        </header>
+                            <p class="concept_description">An <span class="italic">else</span> statement comes at the end. Its block is executed if all of the previous conditions have been <span class="bold">False</span>.</p>
+
+                        <!-- IMAGE   ******************************************************************** -->
+                            <figure>
+                                <img src="http://i.imgur.com/H6Uv0d0.jpg" class="thumbnail" height="200" width="400" alt="if statement diagram">  
+                                    <figcaption>If Statement Flowchart</figcaption>
+                            </figure>
+                        <!-- IMAGE   ******************************************************************** -->
+                            
+                            <p class="concept_description">If the condition in an <span class="italic">if</span> statement is <span class="bold">true</span> the execution enters the indented code that follows.<br>
+                            If the condition is <span class="bold">false</span> the execution skips the indented code.
+                            </p>
+
+                       <!-- IMAGE   ******************************************************************** -->
+                            <figure>
+                                <img src="http://i.imgur.com/aJmvdPB.jpg" class="thumbnail" height="200" width="400" alt="While statement diagram">  
+                                    <figcaption>While Statement Flowchart</figcaption>
+                            </figure>
+                        <!-- IMAGE   ******************************************************************** -->
+                </article><!-- article stage2lesson4 -->
+
+                <!--  STAGE 2 LESSON #5 Solving Problems  *************************** -->
+                <article class="stage2lesson5">
+                    <header class="lesson_title">    
+                        <h3>Lesson 5: Solving Problems</h3>    
+                    </header>
+                        <header class="concept_title">
+                            <h4>Techniques for Debugging</h4>
+                        </header>
+                            <p class="concept_description">
+                                <ul>
+                                    <li>Examine the error message when Python crashes, it will help you identify what went wrong. Read your code backward</li><br>
+                                    <li>If your modified code doesn't work, comment it out and go through it step by step to isolate the problem</li><br>
+                                    <li>Make sure the example code works and behaves as expected.</li><br>
+                                    <li>Use print statement to check intermediate results</li><br>
+                                    <li>Always save the latest working version before adding or modifying it so you can always revert to it</li><br>
+                                </ul>
+                            </p>
+                </article><!-- article stage2lesson5 -->
+
+            <!--  ############# STAGE 3 #############  STAGE 3 ################  STAGE 3   ###############-->
+
+            <header id="stage3Header">
+                <h2>Stage 3: Creating a Movie Website</h2>
+            </header><!-- STAGE 3 HEADER -->
+
+        <!-- STAGE 3 LESSON #1 Intro to Abstraction and what wewill tackle in this stage  *************************** -->   
+                <article class="stage3lesson1">
+                    <header>
+                        <h3>Lesson 1: Introduction to Abstraction</h3>
+                    </header>
+                        <header>
+                            <h4>What we will tackle in this Stage</h4>
+                        </header>
+                        <p>We will be challenged by three new problems in this stage.<br>
+                            <ul>
+                                <li><span class="bold">Take a Break:</span> A computer program that prompts us to take a break</li><br>
+                                <li><span class="bold">Profanity Editor:</span> A computer program that alerts us about embarrassing spelling mistakesspelling mistakes</li><br>
+                                <li><span class="bold">Movie Data Base:</span> A Webpage that displays our favorite movies and links to the trailers of those movies on YouTube</li><br>
+                            </ul>
+                        </p>
+                        <p>We will need to be comfortable with the core programming concepts of:<br>
+                            <ul>
+                                <li><a href="http://learnpythonthehardway.org/book/ex30.html">if Statements</a></li>
+                                <li><a href="http://learnpythonthehardway.org/book/ex33.html">Loops</a></li>
+                                <li><a href="http://learnpythonthehardway.org/book/ex21.html">Functions</a></li>
+                            </ul>
+                        </p>
+                </article><!-- article stage1lesson3 -->
+        <!-- STAGE 3 LESSON #2 Functions Part 1 & 2  *************************** -->
+                <article class="stage3lesson2">
+                    <header>
+                        <h3>Lesson 2: Functions Part One</h3>
+                        <h4>First Challange - Take a Break</h4>
+                    </header>
+
+                        <header>
+                            <h4>A Program that schedules breaks so we don't work for extened periods of time on the computer</h4>
+                        </header> 
+                        <header> 
+                            <h4>Here are my steps for the "Take a Break" Program</h4>
+                        </header> 
+                            <p>
+                                <ol>
+                                    <li>When the computer becomes active start a timer.</li>
+                                    <li>While the timer is less then two hours do nothing.</li>
+                                    <li>When the timer hits two hours open up a window and display the message "You have been working for two hours its time to take a break! Click the Agree Button to proceed"</li>
+                                    <li>The Agree button triggers the browser to open to a YouTube Playlist, and starts a new timer.</li>
+                                    <li>While the timer is less then fifteen minutes do nothing.</li>
+                                    <li>When the timer hits fifteen minutes open a window that displays the message "Break Time is over, now its time to get back to work! Click Yes to Proceed".</li>
+                                    <li>The "Yes" button resets the two hour timer and the process starts all over again.</li>
+                                </ol>
+                            </p>
+                        <header> 
+                            <h4>How to open a web Browser in Python - Search Google</h4>
+                        </header>
+                            <p>import <span class="italic">webbrowser</span><br>
+                                The download of Python includes the Python Standard Library inside this standard Library is the file <span class="italic">webbrowser</span> and inside this is the function <span class="italic">def</span> <b>open</b> - this is the function that allows us to open the web browser to the web address and play the <a href="https://www.youtube.com/" rel="nofollow" target="_blank">YouTube</a> File.
+                            </p>
+                            <p><span class="italic">webbrowser.open("ADDRESS OF YOU TUBE VIDEO")</span>
+                            </p>
+                        <header> 
+                            <h4>This needs to loop every 10 Minutes</h4>
+                        </header>
+
+                            <!-- YOUTUBE   ******************************************************************** -->
+                                <div class="video">
+                                    <iframe width="448" height="252" src="https://www.youtube.com/embed/5TGY5p07g6M" allowsowfullscreen=""></iframe>
+                                </div>
+                            <!-- YOUTUBE   ******************************************************************** -->
+
+                            <p><a href="http://www.tutorialspoint.com/python/python_while_loop.htm" rel="nofollow" target="_blank">While Loop in Python - Tutorialspoint</a>
+                            </p>
+                            <p><a href="http://learnpythonthehardway.org/book/ex33.html" rel="nofollow" target="_blank">While Loop in Python - Learn Python the Hard Way</a>
+                            </p>
+
+                        <header> 
+                            <h4>How to make a program wait? StackOverflow suggests <span class="italic">time.speed</span></h4>
+                        </header>
+                            <p><a href="http://stackoverflow.com/questions/15472707/make-python-program-wait" rel="nofollow" target="_blank">Stackoverflow Link</a><br>
+                            time.sleep(10)<br>
+                            <span class="italic">Current time</span> - print time.ctime()<br>
+                            <span class="italic">time</span> is another file inside the standard library, time has several functions defined inside of it.<br>
+                            <span class="italic">def</span> <b>ctime</b> - which gives us the current time.<br>
+                            <span class="italic">def</span> <b>sleep</b> - which suspends program animation for a specified time period.
+                            </p>
+                        <header>
+                            <h4>The Power of Abstraction</h4>
+                        </header>
+                            <p>Abstraction is a very powerful idea as it allows us to focus on the problem we want to solve and empowers us use these functions simply by reading up on these functions documentation to use them in our programming.<br>
+                            <a href="https://docs.python.org/2.7/library/index.html" rel="nofollow" target="_blank">The Python Standard Library Vers. 2.7</a>
+                            </p>
+                        <header>
+                            <h4>Take a Break</h4>
+                        </header>
+                                    <a href="https://www.dropbox.com/s/cpvi3wchoprh493/takeABreakFullScreenAutoplay.py?dl=0" rel="nofollow" target="_blank">Link to "Take a Break" Python Script</a></p>
+
+                            <!-- YOUTUBE   ******************************************************************** -->
+                                <div class="video">
+                                    <iframe width="448" height="252" src="https://www.youtube.com/embed/2fenvSOTGDg" frameborder="0" allowfullscreen=""></iframe>
+                                </div>
+                            <!-- YOUTUBE   ******************************************************************** -->
+
+                    <header>
+                        <h3>Lesson 2: Functions Part Two</h3>
+                        <h4>Second Challange - Secret Message</h4>
+                    </header>
+                        <header> 
+                            <h4>Here are my steps for the "Secret Message" Program</h4>
+                                <p>The objective is to rename a bunch of files and uncover the secret message I want to do this is three steps
+                                </p>
+                        </header>
+                            <ol>
+                                <li>Navigate to the folder</li>
+                                <li>Load all the file names into memory</li>
+                                <li>Raname the files</li>
+                            </ol>
+                            <!-- IMAGE   ******************************************************************** -->
+                                <figure>
+                                    <img src="http://i.imgur.com/zWiJxRl.png" class="thumbnail" height="200" width="400" alt="David's Secret Message">  
+                                        <figcaption>David's Secret Message - Before and After</figcaption>
+                                </figure>
+                            <!-- IMAGE   ******************************************************************** -->
+                                <a href="http://i.imgur.com/6dO9QaH.png" rel="nofollow" target="_blank">Link to larger Image</a>
+                        <header> 
+                            <h4>How to list the contents of a directory</h4>
+                        </header>
+                                <p><a href="https://docs.python.org/2/library/os.html#os.listdir" rel="nofollow" target="_blank">os.listdir()</a> will get you everything that's in a directory - files and directories<br>
+                                you must import the library <a href="https://docs.python.org/2/library/os.html">os</a>
+                                </p>
+
+                                <p>Inside <span class="bold">OS</span> is <span class="bold">listdir</span> and <span class="bold">rename</span> even though we might not exactly know how these functions work we can use them. This hidding of detail is another example of <span class="bold">Abstraction.</span>
+                                </p>
+
+                                <p><a href="https://docs.python.org/2/library/os.html#os.rename">os.renames()</a> - Recursive directory or file renaming function. Works like rename(), except creation of any intermediate directories needed to make the new pathname good is attempted first. After therename, directories corresponding to rightmost path segments of the old name will be pruned away using <a href="https://docs.python.org/2/library/os.html?highlight=removedir#os.removedirs">removedirs()</a>
+                                </p>
+
+                                <p><a href="https://www.dropbox.com/s/pdeh5m6yvzvkvj4/renameFiles.py?dl=0" rel="nofollow" target="_blank">Link to "Secret Message" Python Script</a>
+                                </p>
+                </article><!-- article stage3lesson2 -->
+        <!-- STAGE 3 LESSON #3 Using Classes  *************************** -->
+                <article class="stage3lesson3">
+                    <header>
+                        <h3>Lesson 3: Using Classes</h3>
+                    </header>
+                        <header>
+                            <h4>3.3a Draw Turtles</h4>
+                        </header>
+                            <p>
+                            Inside the Python Standard Library is a file called “turtle” and inside that is a Class called <a href="https://docs.python.org/2/library/turtle.html" rel="nofollow" target="_blank">Turtle</a>. So then, what is a class?<br>
+                            A <a href="http://www.jesshamrick.com/2011/05/18/an-introduction-to-classes-and-inheritance-in-python/" rel="nofollow" target="_blank">Class</a> is a neatly packaged box which puts things together really well. Allowing us to write code like:<br>
+                            <span class="bold">turtle.Turtle()</span> this calls the function <span class="italic">init</span> inside the class <span class="italic">Turtle</span>.<br>
+                            <span class="italic">Init</span> stands for initialize and it creates memory space for a new instance or object of the class <span class="italic">Turtle</span>. The instance in this case would be called Brad.<br>
+                            </p>
+                            <p class="codeMarkup">brad = turtle.Turtle()<br>
+                            def forward<br>
+                            def right<br></span>
+                            </p>
+
+                            <p>Consider a <span class="italic">Class</span> to be like a Blueprint in Construction and this blueprint can be used to build multiple different buildings.<br>
+                            So <span class="italic">Class</span> <span class="italic">Turtle</span> contains info about the <span class="italic">Turtle</span>.
+                            </p>
+                        <!-- IMAGE   ******************************************************************** -->
+                            <figure>
+                                <img src="http://i.imgur.com/XBFRpp7.png" class="thumbnail" height="200" width="400" alt="TurtleClassInstanceObject">  
+                                    <figcaption>Turtle Class - Blueprint Analogy</figcaption>
+                            </figure>
+                        <!-- IMAGE   ******************************************************************** -->
+                            <p>Both <span class="bold">Brad</span> and <span class="bold">Angie</span> are instances of Class <span class="bold">Turtle</span> but <span class="bold">Angie</span> is a Blue Circle and <span class="bold">Brad</span> is a Yellow Square.
+                            </p>
+                            <p class="codeMarkup">
+                                <code><pre># Draw a square in python using turtle
+
+                                    import turtle
+
+                                    def draw_square():
+                                        window = turtle.Screen()
+                                        window.bgcolor("red")
+
+                                        brad = turtle.Turtle()
+                                        brad.shape("turtle")
+                                        brad.color("yellow")
+
+                                        brad.forward(100)
+                                        brad.right(90)
+                                        brad.forward(100)
+                                        brad.right(90)
+                                        brad.forward(100)
+                                        brad.right(90)
+                                        brad.forward(100)
+                                        brad.right(90)
+
+                                        angie = turtle.Turtle()
+                                        angie.shape("arrow")
+                                        angie.color("blue")
+                                        angie.circle(100)
+
+                                        window.exitonclick()
+
+                                    draw_square()
+                                </pre></code>
+                            </p>
+
+                        <!-- YOUTUBE   ******************************************************************** -->
+                            <div class="video">
+                                <iframe width="448" height="252" src="https://www.youtube.com/embed/hoe7ipSIxAg" frameborder="0" allowfullscreen></iframe>
+                            </div>
+                        <!-- YOUTUBE   ******************************************************************** -->
+
+                        <!-- IMAGE   ******************************************************************** -->
+                            <figure>
+                                <img src="http://i.imgur.com/RlPAnF1.png" class="thumbnail" height="200" width="400" alt="Flower Circles">  
+                                    <figcaption>Turtle Class - Blueprint Analogy</figcaption>
+                            </figure>
+                        <!-- IMAGE   ******************************************************************** -->
+                            <p>Link to the <a href="https://www.dropbox.com/s/u3rdv8gdqmbktcp/flower_circles.py?dl=0" rel="nofollow" target="_blank">Flower Circles</a> Python Script
+                            </p>
+                            <p><span class="italic">from statement</span> lets you imports specific attributes from a <a href="https://docs.python.org/2/tutorial/modules.html">module</a>.
+                            </p>
+                        <header>
+                            <h4>3.3b Sending Texts</h4>
+                        </header>
+                            <p>Pythons <a href="http://effbot.org/zone/import-confusion.htm" rel="nofollow" target="_blank">from statement</a> lets you imports specific attributes from a <a href="https://docs.python.org/2/tutorial/modules.html">module</a>.<br>
+                            More on <a href="http://www.tutorialspoint.com/python/python_modules.htm" rel="nofollow" target="_blank">Python Modules</a><br>             
+                            </p>
+                        <header>
+                            <h4>Twilio</h4>
+                        </header>
+                            <p>For this assignment we use Twilio which can be downloaded from here:<br>
+                            <a href="https://github.com/twilio/twilio-python" rel="nofollow" target="_blank">Twilio on GutHub</a>
+                            </p>
+                            <p class="codeMarkup">twilio/rest/client.py<br>
+                            from twilio import rest<br>
+                            rest.TwilioRestClient
+                            </p>
+                            <p>After downloading Twilio inside is a folder <span="italic">rest</span><br>
+                            Inside that folder is a <span class="Italic">TwilioRestClient</span>
+                            </p>
+                            <p><span class="bold">A Class is a specification of how to create an object<br>
+                            An instance of a Class, is the creation of something using the class specification.<br></span>
+                            </p>
+                            <p><span class="bold">For Example: A Class Citrus Fruit. Where the different types of Citrus ...<br></span>
+                                <ul>
+                                    <li>Orange</li>
+                                    <li>Grapefruit</li>
+                                    <li>Lemon</li>
+                                    <li>Lime</li>
+                                </ul>
+                            <span class="bold">All fit into the Citrus specification.</span>
+                            </p>
+                        <header>
+                            <h4>3.3c Profanity Editor</h4>
+                        </header>
+                            <p>Create a list of curse words that you will check the text against.<br>
+                                <ol>
+                                    <li>Load the text into memory.</li>
+                                    <li>For each word search the text for a match.</li>
+                                    <li>If there is a match append the word and its position in a "results list".</li>
+                                    <li>Move on to the next word in the text and continue until text has been check for all curse words in list.</li>
+                                    <li>Print the "results list".</li>
+                                </ol>
+                            </p>
+                            <p><a href="https://docs.python.org/2/library/functions.html#open" rel="nofollow" target="_blank">Open</a> is a built in function in Python</p>
+                            <p><span class="bold">Some Examples of Built in Functions</span></p>
+                            <p><code><pre>
+                                #abs()
+                                exNum1 = -5
+                                exNum2 = 5
+                                print (abs(exNum1))
+                                if abs(exNum1) == exNum2:
+                                    print('These are the same')
+
+                                #help()
+                                type help() 
+
+                                #Max Min
+                                exList = [5,2,6,7,8,0]
+                                print (max(exList))
+                                print (min(exList))
+                                # Get the max and min values in a list
+
+                                # Rounding
+                                x = 4.123
+                                print (round(x))
+                                y = 4.71
+                                print (round(y))
+                                # Rounds up and down
+                                # str()
+                                str(2)
+
+                                # use the type built in function
+                                a = 41
+                                b = 'fortyone'
+                                type(a), type(b)</pre></code>
+                            </p>
+                            <p>Python's Standard Library<a href="https://docs.python.org/2/library/functions.html#type" rel="nofollow" target="_blank"> Built in Functions</a>
+                            </p>
+
+                        <!-- IMAGE   ******************************************************************** -->
+                            <figure>
+                                <img src="http://i.imgur.com/qQWcwJ4.png" class="thumbnail" height="200" width="400" alt="Open returns an Object of the file type">  
+                                    <figcaption>Open returns an Object of the file type</figcaption>
+                            </figure>
+                        <!-- IMAGE   ******************************************************************** -->
+
+                        <!-- IMAGE   ******************************************************************** -->
+                            <figure>
+                                <img src="http://i.imgur.com/asMOgde.png" class="thumbnail" height="200" width="400" alt="Connecting Ideas">  
+                                    <figcaption>Connecting Ideas</figcaption>
+                            </figure>
+                        <!-- IMAGE   ******************************************************************** -->
+
+                        <!-- YOUTUBE   ******************************************************************** -->
+                            <div class="video">
+                                <iframe width="448" height="252" src="https://www.youtube.com/embed/U6dLXGG7WTA" frameborder="0" allowfullscreen></iframe>
+                            </div>
+                        <!-- YOUTUBE   ******************************************************************** -->
+
+                        <header>
+                            <h4>3.4a Movie Website</h4>
+                        </header>
+                            <p><span class="bold">Create a Class</span> - Here we will build the Movie Website, we will create several different instances for different movies.<br>
+                            <span class="bold">Plan out the <span class="italic">Class</span> Movie - What data should it contain?</span>
+                            </p>
+                            <p><span class="bold">things to remember</span><br>
+                                <ul>
+                                    <li>title</li>
+                                    <li>storyline</li>
+                                    <li>poster_image</li>
+                                    <li>youtube_trailer</li>
+                                </ul>
+                            <span class="bold">things to do</span><br>
+                                <ul>
+                                    <li>show_trailer()</li>
+                                </ul>
+                            </p>
+                        <!-- IMAGE   ******************************************************************** -->
+                            <figure>
+                                <img src="http://i.imgur.com/dgvPcUw.png" class="thumbnail" height="200" width="400" alt="Example Movie Website">  
+                                <figcaption>Media Diagram</figcaption>
+                            </figure>
+                        <!-- IMAGE   ******************************************************************** -->
+
+                        <!-- IMAGE   ******************************************************************** -->
+                            <figure>
+                                <img src="http://i.imgur.com/SzJDlKS.png" class="thumbnail" height="200" width="400" alt="Media Structure1">  
+                                    <figcaption>Structure1</figcaption>
+                            </figure>
+                        <!-- IMAGE   ******************************************************************** -->
+                    
+                            <p>A <span class="italic">function</span> that is defined inside a class and is associated with an instance is called an <a href="">instance method</a>
+                            </p>
+                        <!-- IMAGE   ******************************************************************** -->
+                            <figure>
+                                <img src="http://i.imgur.com/vhm6GdF.png" class="thumbnail" height="200" width="400" alt="Structure2">  
+                                    <figcaption>Structure2</figcaption>
+                            </figure>
+                        <!-- IMAGE   ******************************************************************** -->
+                            <p>Create an new instance of classMovie for each movie, so that space is set aside for each instance and their variables(instance variables are unique to each instance), (title, storyline, poster_image, trailer)
+                            </p>
+                            <code><pre>
+                                avatar = media.Movie(“Avatar”...
+                                    __init__ gets called
+                                    self = avatar
+                                    movie_title = “Avatar”
+                                    movie_storyline = “A marine on an alien planet”</pre></code>
+                            <p><span class="italic bold">self</span> becomes a local variables within the function init.
+                            </p>
+
+                            <p><span class="italic bold">avatar.show_trailer()</span> when we run this we want it to open the trailer in a browser.
+                            </p>
+                        <!-- IMAGE   ******************************************************************** -->
+                            <figure>
+                                <img src="http://i.imgur.com/sVGlbfL.jpg" class="thumbnail" height="200" width="400" alt="Example Movie Website">  
+                                    <figcaption>Example Movie Website</figcaption>
+                            </figure>
+                        <!-- IMAGE   ******************************************************************** -->
+                
+                            <p>Google's Python Styleguide <a href="http://google-styleguide.googlecode.com/svn/trunk/pyguide.html" rel="nofollow" target="_blank">Link</a>
+                            </p>
+                            <p>Link to David's Favorite Movies Website <a href="https://www.dropbox.com/sh/65lzvx1aqwhh08j/AABGAd8UBi3ob1i7vmYSuAjda?dl=0" rel="nofollow" target="_blank">Files</a></p>
+                            <p>David's Favorite Movies Website <a href="https://www.dropbox.com/s/kroxkm2mx2ku8ub/fresh_tomatoes.html?dl=0" rel="nofollow" target="_blank">Link</a>
+                            </p>
+
+                        <!-- IMAGE   ******************************************************************** -->
+                            <figure>
+                                <img src="http://i.imgur.com/Ccz8jqt.png" class="thumbnail" height="200" width="400" alt="David's Favorite Movies Website 1">  
+                                    <figcaption>David's Favorite Movies Website 1</figcaption>
+                            </figure>
+                        <!-- IMAGE   ******************************************************************** -->
+
+                        <!-- IMAGE   ******************************************************************** -->
+                            <figure>
+                                <img src="http://i.imgur.com/NeUSZ9X.png" class="thumbnail" height="200" width="400" alt="David's Favorite Movies Website 2">  
+                                    <figcaption>David's Favorite Movies Website 2</figcaption>
+                            </figure>
+                        <!-- IMAGE   ******************************************************************** -->
+
+                        <header>
+                            <h4>3.4b Make Classes - Class Variables and Pre-Defined</h4>
+                        </header>
+                            <p><span class="bold">Class Variables</span><br>
+                            Variables shared by all instances of a class. Defined at the level of the class and outside the init function.
+                            </p>
+                            <p><span class="codeMarkup">class Movie():<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;VALID_RATINGS = ["G", "PG", "PG-13", "R"]<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;def __init__(self, movie_title, movie_storyline, poster_image, trailer_youtube):</span>
+                            </p>
+                            <p><span class="bold">Doc Strings</span><br>
+                            Use <span class="italic">"triple quotes"</span> to notate in your scripts and then retrieve notes with <span class="bold">__doc__</span>
+                            </p>
+                            <code><pre>class Movie():   
+                    """This class provides a way to store Movie related information"""</pre></code>
+                            <p><span class="bold">Retrieve using print (media.Movie.__doc__)</span>
+                            </p>
+                            <p><span class="codeMarkup">>>> import turtle<br>
+                            >>> turtle.Turtle.__doc__<br>
+                            'RawTurtle auto-creating (scrolled) canvas.\n\n    When a Turtle object is created or a function derived from some\n    Turtle method is called a TurtleScreen object is automatically created.\n    '<br>
+                            >>></span>
+                            </p>
+                            <p>Documentation on pre-defined variables <a href="http://www2.lib.uchicago.edu/keith/courses/python/class/5/" rel="nofollow" target="_blank">__name __ and __module__</a>
+                            </p>
+                            <p><span class="bold">__doc__</span> - The class documentation string.</p>
+                            <p><span class="bold">__name__</span> - The name of the class.</p>
+                            <p><span class="bold">__module__</span> - The name of the module in which this class was defined.
+                            </p>
+                        <!-- IMAGE   ******************************************************************** -->
+                            <figure>
+                                <img src="http://i.imgur.com/eS9GXWY.png" class="thumbnail" height="200" width="400" alt="Doc_Name_Module_Predefined_Variables">  
+                                    <figcaption>Predefined Variables</figcaption>
+                            </figure>
+                        <!-- IMAGE   ******************************************************************** -->
+
+                        <header>
+                            <h4>3.4b Make Classes - Inheritance</h4>
+                        </header>
+
+                        <!-- IMAGE   ******************************************************************** -->
+                            <figure>
+                                <img src="http://i.imgur.com/srF4TKP.png" class="thumbnail" height="200" width="400" alt="Inheritance Diagram">  
+                                    <figcaption>Inheritance Diagram</figcaption>
+                            </figure>
+                        <!-- IMAGE   ******************************************************************** -->
+
+                        <!-- IMAGE   ******************************************************************** -->
+                            <figure>
+                                <img src="http://i.imgur.com/QSpL69D.png" class="thumbnail" height="200" width="400" alt="Intuitive Inheritance Mapping">  
+                                    <figcaption>Intuitive Inheritance Mapping</figcaption>
+                            </figure>
+                        <!-- IMAGE   ******************************************************************** -->
+
+
+                        <header>
+                            <h4>Stage 3 Submission - Make a Movie Website</h4>
+                        </header>
+
+                        <!-- IMAGE   ******************************************************************** -->
+                            <figure>
+                                <img src="http://i.imgur.com/t6DXBoZ.png" class="thumbnail" height="200" width="400" alt="Stage 3 Submission">  
+                                    <figcaption>David's Favorite Movies</figcaption>
+                            </figure>
+                        <!-- IMAGE   ******************************************************************** -->
+
+                        <!-- LINK   ******************************************************************** -->
+                            <p>David's Favorite Movies <a href="https://drive.google.com/open?id=0B7c4Ypg2hHYtSFlrQmttZWw4aTQ" rel="nofollow" target="_blank">Website(HTML)</a> - Stage 3 Submission</p>
+                        <!-- LINK   ******************************************************************** -->
+                        <!-- LINK   ******************************************************************** -->
+                            <p><a href="https://drive.google.com/open?id=0B7c4Ypg2hHYtX1dUX3ViZWUyZEE" rel="nofollow" target="_blank">media.py</a> - Stage 3 Submission</p>
+                        <!-- LINK   ******************************************************************** -->
+                        <!-- LINK   ******************************************************************** -->
+                            <p><a href="https://drive.google.com/open?id=0B7c4Ypg2hHYtUi1KSEZmQjIwMVU" rel="nofollow" target="_blank">fresh_tomatoes.py</a> - Stage 3 Submission</p>
+                        <!-- LINK   ******************************************************************** -->
+                        <!-- LINK   ******************************************************************** -->
+                            <p><a href="https://drive.google.com/open?id=0B7c4Ypg2hHYtTzRGQ25wNjR1R2s" rel="nofollow" target="_blank">entertainment_center.py</a> - Stage 3 Submission</p>
+                        <!-- LINK   ******************************************************************** -->
+                            
+
+                </article><!-- article stage3lesson3 -->
+
+        </section><!-- ############### MAIN SECTION CLOSE ############### MAIN SECTION CLOSE ###############  -->
+
+    <!-- ASIDE **********  ASIDE **************** ASIDE  ************* ASIDE  -->
+        <aside class="aside1TOC"><!-- Aside Table of Contents Open -->
+            <header id="toc">
+                    <h2><a href="javascript:(function(){var i=function(a){this.sections=[];this.startingNode=a};i.prototype={heading:false,append:function(a){a.container=this;this.sections.push(a)},asHTML:function(a){var b=u(this.heading);if(a)b='&lt;a href=&quot;#'+v(this.startingNode)+'&quot;&gt;'+b+&quot;&lt;/a&gt;&quot;;return b+q(this.sections,a)}};var q=function(a,b){for(var f=&quot;&quot;,c=0;c&lt;a.length;c++)f+=&quot;&lt;li&gt;&quot;+a[c].asHTML(b)+&quot;&lt;/li&gt;&quot;;return f==&quot;&quot;?f:&quot;&lt;ol&gt;&quot;+f+&quot;&lt;/ol&gt;&quot;},r=function(a){a=a.heading;return h(a)?j(a):1},u=function(a){if(h(a)){if(k(a)==&quot;HGROUP&quot;)a=a.getElementsByTagName(&quot;h&quot;+
+                    -j(a))[0];return a.textContent||a.innerText||&quot;&lt;i&gt;No text content inside &quot;+a.nodeName+&quot;&lt;/i&gt;&quot;}return&quot;&quot;+a},v=function(a){var b=a.getAttribute(&quot;id&quot;);if(b)return b;do b=&quot;h5o-&quot;+ ++s;while(t.getElementById(b));a.setAttribute(&quot;id&quot;,b);return b},e,d,g,s,t,w=function(a,b,f){var c=a;a:for(;c;){b(c);if(c.firstChild){c=c.firstChild;continue a}for(;c;){f(c);if(c.nextSibling){c=c.nextSibling;continue a}c=c==a?null:c.parentNode}}},x=function(a){if(!h(o(g)))if(l(a)||m(a)){e!=null&amp;&amp;g.push(e);e=a;d=new i(a);e.outline=
+                    {sections:[d],startingNode:a,asHTML:function(c){return q(this.sections,c)}}}else if(e!=null)if(h(a)){if(d.heading)if(j(a)&gt;=r(n(e.outline))){var b=new i(a);e.outline.sections.push(b);d=b;d.heading=a}else{b=false;var f=d;do{if(j(a)&lt;r(f)){b=new i(a);f.append(b);d=b;d.heading=a;b=true}f=f.container}while(!b)}else d.heading=a;g.push(a)}},y=function(a){var b=o(g);if(h(b))b==a&amp;&amp;g.pop();else{if((l(a)||m(a))&amp;&amp;!d.heading)d.heading=&quot;&lt;i&gt;Untitled &quot;+k(a)+&quot;&lt;/i&gt;&quot;;if(l(a)&amp;&amp;g.length&gt;0){e=g.pop();d=n(e.outline);for(b=
+                    0;b&lt;a.outline.sections.length;b++)d.append(a.outline.sections[b])}else if(m(a)&amp;&amp;g.length&gt;0){e=g.pop();for(d=n(e.outline);d.sections.length&gt;0;)d=n(d)}else if(l(a)||m(a))d=e.outline.sections[0]}},k=function(a){return a.tagName.toUpperCase()},p=function(a){return function(b){return z(b)&amp;&amp;(new RegExp(a,&quot;i&quot;)).test(k(b))}},m=p(&quot;^BLOCKQUOTE|BODY|DETAILS|FIELDSET|FIGURE|TD$&quot;),l=p(&quot;^ARTICLE|ASIDE|NAV|SECTION$&quot;),h=p(&quot;^H[1-6]|HGROUP$&quot;),z=function(a){return a&amp;&amp;a.tagName},j=function(a){var b=k(a);if(b==&quot;HGROUP&quot;)for(b=
+                    1;b&lt;=6;b++){if(a.getElementsByTagName(&quot;H&quot;+b).length&gt;0)return-b}else return-parseInt(b.substr(1))},n=function(a){return o(a.sections)},o=function(a){return a[a.length-1]};HTML5Outline=function(a){s=0;t=a.ownerDocument||window.document;d=e=null;g=[];w(a,x,y);return e!=null?e.outline:null}})();
+                    ;(function(){var b=function(e,f){for(var d=0;d&lt;e.length;d++)e[d].setAttribute(&quot;style&quot;,f)},g=HTML5Outline(document.body).asHTML(true),a=document.createElement(&quot;div&quot;);b([a],&quot;position:fixed;top:10px;right:10px;border:2px solid #000;background:rgba(255,255,255,.9);padding:15px;z-index:999;max-height:400px;overflow:auto;font-size:11px;font-family:Verdana, sans-serif;&quot;);a.innerHTML=g;b(a.getElementsByTagName(&quot;li&quot;),&quot;list-style:decimal outside;margin-left:20px;font-size:11px;font-family:Verdana, sans-serif;&quot;);
+                    b(a.getElementsByTagName(&quot;ol&quot;),&quot;margin: 0;padding:0;font-size:11px;font-family:Verdana, sans-serif;&quot;);b(a.getElementsByTagName(&quot;a&quot;),&quot;color:#008;text-decoration:underline;font-size:11px;font-family:Verdana, sans-serif;&quot;);var c=a.insertBefore(document.createElement(&quot;a&quot;),a.firstChild);b([c],&quot;float: right; margin: 0 0 5px 5px; padding: 5px; border: 1px #008 solid;color:#00f;background-color:#ccf;&quot;);c.innerHTML=&quot;Close&quot;;c.href=&quot;#&quot;;c.onclick=function(){document.body.removeChild(a);a=c=null};document.body.appendChild(a)})();
+                    ;" title="TableOfContents">Table of Contents</a></h2></h2>
+            </header>
+        </aside><!-- Aside Table of Contents Close -->
+        
+        <aside class="aside2Resources"><!-- Aside List of References and Resources - Open -->
+            <header id="Resources">
+                <h3>Definitions &amp; Resources</h3>
+            </header><!-- Aside List of References and Resources - Close -->
+                <dl class="links"><!-- Aside List of References and Resources - Open -->
+                    <dt>World Wide Web</dt>
+                    <dd><a href="http://webfoundation.org/about/vision/history-of-the-web/" rel="nofollow" target="_blank">Web Foundation Website</a></dd>
+                    <dt>HTML</dt>
+                    <dd><a href="http://en.wikipedia.org/wiki/HTML" rel="nofollow" target="_blank">Hyper Text Markup Language</a></dd>
+                    <dt>HTTP</dt>
+                    <dd><a href="http://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol" rel="nofollow" target="_blank">Hyper Text Transfer Protocol</a></dd>
+                    <dt>URL</dt>
+                    <dd><a href="http://en.wikipedia.org/wiki/Uniform_resource_locator" rel="nofollow" target="_blank">Uniform Resource Locator</a></dd>
+                    <dt>WC3</dt>
+                    <dd><a href="http://www.w3.org/" rel="nofollow" target="_blank">World Wide Web Consortium</a></dd>
+                    <dt>HTML5</dt>
+                    <dd><a href="http://html5please.com/" rel="nofollow" target="_blank">HTML5 Reference</a></dd>
+                    <dt>WC3 Cheatsheet</dt>
+                    <dd><a href="http://www.w3.org/2009/cheatsheet/" rel="nofollow" target="_blank">Web Technologies Cheatsheet</a></dd>
+                    <dt>HTML5 Validator</dt>
+                    <dd><a href="https://validator.w3.org/nu/" rel="nofollow" target="_blank">HTML5 Validator</a></dd>
+                    <dt>HTMLIFY</dt>
+                    <dd><a href="http://www.htmlify.net/" rel="nofollow" target="_blank">Adds HTML5 Tags</a></dd>
+                    <dt>W3C Developer Tools</dt>
+                    <dd><a href="http://www.w3.org/developers/tools" rel="nofollow" target="_blank">W3 Tools</a></dd>
+                    <dt>HTML5 Outliner for Google Chrome</dt>
+                    <dd><a href="https://chrome.google.com/webstore/detail/html5-outliner/afoibpobokebhgfnknfndkgemglggomo?hl=en" rel="nofollow" target="_blank">Chrome HTML5 Outliner</a></dd>
+                    <dt>HTML5 Outliner online</dt>
+                    <dd><a href="https://gsnedders.html5.org/outliner/" rel="nofollow" target="_blank">Online Outliner</a></dd>
+                    <dt>HTML5 Tag Generator</dt>
+                    <dd><a href="http://www.htmlify.net/" rel="nofollow" target="_blank">Adds Tags</a></dd>
+                    <dt>Flexbox Explaination</dt>
+                    <dd><a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" rel="nofollow" target="_blank">Flexbox</a></dd>
+                    <dt>The Importance of Sectioning Element HTML5</dt>
+                    <dd><a href="http://www.smashingmagazine.com/2013/01/18/the-importance-of-sections/" rel="nofollow" target="_blank">The Importance of ... Article</a></dd>
+                    <dt>The Semantics of HTML5 Structural Elements</dt>
+                    <dd><a href="http://colinaut.com/2009/10/15/the-semantics-of-html5-structural-elements/" rel="nofollow" target="_blank">The Semantics of HTML5 ...</a></dd>
+                    <dt>Udacity Front End Style Guide</dt>
+                    <dd><a href="http://udacity.github.io/frontend-nanodegree-styleguide/index.html" rel="nofollow" target="_blank">Style Guide</a></dd>
+                    <dt>Accessible Culture Website</dt>
+                    <dd><a href="http://accessibleculture.org/articles/2011/04/html5-aria-2011/" rel="nofollow" target="_blank">HTML5, ARIA Roles, and Screen Readers</a></dd>
+                    <dt></dt>
+                    <dd><a href="http://www.htmlify.net/" rel="nofollow" target="_blank">Adds Tags</a></dd>
+                </dl>
+                <dl class="css"><!-- Aside CSS Tool Links -->
+                    <dt>CSS Reference</dt>
+                    <dd><a href="https://css-tricks.com/" rel="nofollow" target="_blank">CSS Tricks</a></dd>
+                    <dt>CSS Definition</dt>
+                    <dd><a href="http://www.w3.org/Style/CSS/" rel="nofollow" target="_blank">Adds Tags</a></dd>
+                    <dt>CSS Validator</dt>
+                    <dd><a href="https://jigsaw.w3.org/css-validator/#validate_by_input" rel="nofollow" target="_blank">CSS Validator</a></dd>
+                    <dt>Andy Brown's Page</dt>
+                    <dd><a href="http://learn-2-code.appspot.com/" rel="nofollow" target="_blank">Andy Web Page</a></dd>
+                    <dt>CSS Layout Resource</dt>
+                    <dd><a href="http://learnlayout.com/position.html" rel="nofollow" target="_blank">Learn CSS Layout</a></dd>
+                    <dt>What Reset to Use</dt>
+                    <dd><a href="https://css-tricks.com/poll-results-what-css-reset-do-you-use/" rel="nofollow" target="_blank">What Reset to Use</a></dd>
+                    <dt>How Selector Work</dt>
+                    <dd><a href="https://css-tricks.com/how-css-selectors-work/" rel="nofollow" target="_blank">How Selectors Work</a></dd>
+                    <dt>Positioning Content</dt>
+                    <dd><a href="http://learn.shayhowe.com/html-css/positioning-content/" rel="nofollow" target="_blank">Positioning Content Article</a>               </dd>
+                    <dt>CSSReset</dt>
+                    <dd><a href="http://cssreset.com/" rel="nofollow" target="_blank">CSS Reset Web Site</a></dd>
+                </dl>
+                <dl class="links"><!-- Aside Useful Links -->
+                    <dt>Codepen</dt>
+                    <dd><a href="http://codepen.io/dkennedy/" rel="nofollow" target="_blank">Codepen</a></dd>
+                    <dt>ScratchPadIO</dt>
+                    <dd><a href="http://scratchpad.io/trashy-hammer-8282" rel="nofollow" target="_blank">ScratchPadIO</a></dd>
+                    <dt>Sublime</dt>
+                    <dd><a href="http://www.sublimetext.com/" target="_blank">Sublime</a></dd>
+                    <dt>Brackets</dt>
+                    <dd><a href="http://brackets.io/" rel="nofollow" target="_blank">Brackets</a></dd>
+                    <dt>Python Language</dt>
+                    <dd><a href="https://www.python.org/" rel="nofollow" target="_blank">Python.org Website</a></dd>
+                    <dt>John Backus</dt>
+                    <dd><a href="http://en.wikipedia.org/wiki/John_Backus" rel="nofollow" target="_blank">John Backus</a></dd>
+                    <dt>Backus–Naur Form</dt>
+                    <dd><a href="http://en.wikipedia.org/wiki/Backus%E2%80%93Naur_Form" rel="nofollow" target="_blank">Wikipedia Link</a></dd>
+                    <dd><a href="https://youtu.be/B4wMpOhOako" rel="nofollow" target="_blank">Udacity Video Tutorial</a></dd>
+                    <dt>Fortran</dt>
+                    <dd><a href="http://en.wikipedia.org/wiki/Fortran" rel="nofollow" target="_blank">Fortran Wikipedia</a></dd>
+                    <dt>Computational and Procedural Thinking</dt>
+                    <dd><a href="http://iae-pedia.org/Computational_Thinking#Computational_and_Procedural_Thinking" rel="nofollow" target="_blank">Wiki Link</a></dd>
+                    <dt>Admiral Grace Hopper</dt>
+                    <dd><a href="http://en.wikipedia.org/wiki/Grace_Hopper" rel="nofollow" target="_blank">Wiki Link</a></dd>
+                    <dt></dt>
+                    <dd><a href="https://youtu.be/JEpsKnWZrJ8" rel="nofollow" target="_blank">Video explaining a nanosecond</a></dd>
+                    <dt>Interpreter</dt>
+                    <dd><a href="http://en.wikipedia.org/wiki/Interpreter_(computing)" rel="nofollow" target="_blank">Interpreter(Computing) Wikipedia</a></dd>
+                    <dt>Binary</dt>
+                    <dd><a href="https://youtu.be/hacBFrgtQjQ" rel="nofollow" target="_blank">CS50 Video explains Binary</a></dd>
+                    <dt>Online Python Tutor</dt>
+                    <dd><a href="http://pythontutor.com/" rel="nofollow" target="_blank">Online Python Tutor tool created by Philip Guo</a></dd>          
+                </dl>
+        </aside><!-- Aside List of References and Resources - Close -->
+      
+        <aside class="aside3Summary">
+            <header id="Summary">
+            <h3>Building Structure and Style Summary</h3>
+            </header>
+            <ul>
+                <li>Take the design and Boxify.</li>
+                <li>Using Headings build a structured outline. H2 should be the second most important heading.</li>
+                <li>What size should elements be think about how you will position them
+                </li><li>Once the general layout is complete its time to refine.</li>
+                <li>look for the boxes, patter, repeated styles and semantic elements.</li>
+                <li>Write the HTML.</li>
+                <li>Apple Styles - from biggest to smallest. Start to fix the details.</li>
+              </ul>
+                <br>
+                <p>
+
+                      Remenber that the Developer Tools allow you to change things very quickly - try things out.
+      </p>
+        </aside>
+       
+    <!-- FOOTER **********  FOOTER OPEN **************** FOOTER OPEN ************* FOOTER OPEN -->
+        <footer class="pageFooter">
+            <pre><code>© David Kennedy 2015<a href="mailto:dkennedychicago@gmail.com" title="email David!">dkennedychicago@gmail.com</a></code></pre>
+        </footer>
+        
+    </body>
+</html>
